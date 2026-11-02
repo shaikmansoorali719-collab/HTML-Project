@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8f5">
+  <meta name="description" content="Prepare a sample property listing with Aangan.">
+  <title>List your property — Aangan</title>
+  <style>
+    :root{--ink:#17251f;--muted:#6f7973;--paper:#f7f8f5;--green:#1e604b;--green-dark:#174c3b;--line:#e7eae5;--mint:#e7efe9}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 Arial,Helvetica,sans-serif}a{color:var(--green)}a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,button:focus-visible{outline:3px solid #d4a767;outline-offset:3px}.wrap{width:min(1040px,calc(100% - 44px));margin:auto}.top{height:74px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;gap:10px;align-items:center;color:var(--ink);text-decoration:none;font-size:22px;font-weight:800}.mark{width:35px;height:35px;display:grid;place-items:center;background:var(--green);color:#fff;border-radius:12px}.back{font-size:13px;font-weight:700;text-decoration:none}.intro{padding:40px 0 22px}.eyebrow{color:var(--green);font-size:11px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase}.intro h1{font-size:37px;letter-spacing:-1.1px;margin:8px 0}.intro p{color:var(--muted);font-size:14px;margin:0}.layout{display:grid;grid-template-columns:1fr 290px;gap:25px;align-items:start;padding-bottom:55px}.form-card,.aside{background:#fff;border:1px solid var(--line);border-radius:12px}.form-card{padding:25px}.form-card h2{font-size:18px;margin:0 0 17px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:0 15px}.field{margin-bottom:15px}.field.full{grid-column:1/-1}.field label{display:block;font-size:12px;font-weight:700;margin-bottom:6px}.field input,.field select,.field textarea{width:100%;border:1px solid #dfe4de;border-radius:7px;padding:11px 12px;font:inherit;font-size:13px;background:#fff;color:var(--ink)}.field textarea{min-height:100px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--green);outline:3px solid #1e604b22}.hint{font-size:11px;color:var(--muted);margin:5px 0 0}.submit{width:100%;border:0;border-radius:8px;padding:13px;background:var(--green);color:white;font-weight:700;font-size:14px;cursor:pointer}.submit:hover{background:var(--green-dark)}.aside{padding:20px;position:sticky;top:18px}.aside h2{font-size:16px;margin:0 0 11px}.aside ul{margin:0;padding-left:18px;color:var(--muted);font-size:12px}.aside li{margin:7px 0}.notice{margin-top:17px;background:#f1f4f0;border-radius:7px;padding:12px;color:#58645d;font-size:11px}.notice strong{color:var(--ink)}.foot{border-top:1px solid var(--line);padding:20px 0;color:var(--muted);font-size:12px}
+    @media(max-width:760px){.layout{grid-template-columns:1fr}.aside{position:static;grid-row:1}.intro h1{font-size:32px}}
+    @media(max-width:520px){.wrap{width:calc(100% - 32px)}.top{height:65px}.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.form-card{padding:19px}.intro{padding-top:30px}}
+  </style>
+</head>
+<body>
+  <header class="wrap top"><a class="brand" href="index.html"><span class="mark" aria-hidden="true">⌂</span>Aangan</a><a class="back" href="Ownerpage.html">← Owner dashboard</a></header>
+  <main class="wrap">
+    <section class="intro"><span class="eyebrow">For property owners</span><h1>Give your home a good introduction.</h1><p>Add the basics here. Clear information helps people understand if your property fits their needs.</p></section>
+    <div class="layout">
+      <form class="form-card" action="Ownerpage.html" method="get">
+        <h2>Property details</h2>
+        <div class="fields">
+          <div class="field full"><label for="title">Listing title</label><input id="title" name="title" type="text" placeholder="e.g. Bright 2-bedroom apartment" required></div>
+          <div class="field"><label for="kind">Property type</label><select id="kind" name="kind" required><option value="" disabled selected>Choose a type</option><option>Apartment</option><option>Independent house</option><option>Villa</option><option>Shared home</option><option>Commercial space</option></select></div>
+          <div class="field"><label for="offer">Listing type</label><select id="offer" name="offer" required><option value="" disabled selected>Rent or sale?</option><option>For rent</option><option>For sale</option></select></div>
+          <div class="field"><label for="city">City</label><select id="city" name="city" required><option value="" disabled selected>Select a city</option><option>Bengaluru</option><option>Chennai</option><option>Hyderabad</option><option>Mumbai</option><option>Pune</option><option>Other</option></select></div>
+          <div class="field"><label for="area">Neighbourhood</label><input id="area" name="area" type="text" placeholder="e.g. Indiranagar" required></div>
+          <div class="field"><label for="price">Price (₹)</label><input id="price" name="price" type="number" min="1" step="1" placeholder="Monthly rent or sale price" required></div>
+          <div class="field"><label for="size">Area (sq ft)</label><input id="size" name="size" type="number" min="1" step="1" placeholder="e.g. 1200" required></div>
+          <div class="field"><label for="beds">Bedrooms</label><select id="beds" name="beds" required><option value="" disabled selected>Select</option><option>Studio</option><option>1</option><option>2</option><option>3</option><option>4+</option></select></div>
+          <div class="field"><label for="baths">Bathrooms</label><select id="baths" name="baths" required><option value="" disabled selected>Select</option><option>1</option><option>2</option><option>3</option><option>4+</option></select></div>
+          <div class="field full"><label for="description">About the home</label><textarea id="description" name="description" placeholder="Share what makes the home special, its condition and nearby amenities." required></textarea><p class="hint">Avoid including a private access code or sensitive personal information.</p></div>
+          <div class="field full"><label for="email">Contact email</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required></div>
+        </div>
+        <button class="submit" type="submit">Preview listing&nbsp; →</button>
+        <p class="hint" style="text-align:center;margin-top:10px">This sample form does not publish or store your information.</p>
+      </form>
+      <aside class="aside"><h2>A useful listing includes</h2><ul><li>A clear, specific title</li><li>Accurate rent or sale price</li><li>Neighbourhood and home size</li><li>Good-quality property photos</li><li>Honest details on condition and amenities</li></ul><div class="notice"><strong>HTML-only demo:</strong> Submitting returns to the sample owner dashboard. No listing or contact details are saved or sent.</div></aside>
+    </div>
+  </main>
+  <footer class="wrap foot">© 2026 Aangan · <a href="index.html">Return to home search</a></footer>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8f5">
+  <title>Create an account — Aangan</title>
+  <style>
+    :root{--ink:#17251f;--muted:#6f7973;--paper:#f7f8f5;--green:#1e604b;--green-dark:#174c3b;--line:#e7eae5}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 Arial,Helvetica,sans-serif;min-height:100vh;display:flex;flex-direction:column}a{color:var(--green)}a:focus-visible,input:focus-visible,select:focus-visible,button:focus-visible{outline:3px solid #d4a767;outline-offset:3px}.wrap{width:min(1080px,calc(100% - 40px));margin:auto}.topbar{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-size:22px;font-weight:800;letter-spacing:-.7px}.brand-mark{width:35px;height:35px;display:grid;place-items:center;background:var(--green);color:white;border-radius:12px;font-size:20px}.back{text-decoration:none;font-size:14px;font-weight:700}.layout{flex:1;display:grid;place-items:center;padding:38px 0}.card{width:min(100%,520px);background:white;border:1px solid var(--line);border-radius:16px;padding:36px 40px;box-shadow:0 18px 55px #17251f0c}.eyebrow{color:var(--green);font-size:11px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase}.card h1{font-size:31px;line-height:1.15;letter-spacing:-1px;margin:9px 0}.intro{color:var(--muted);font-size:14px;margin:0 0 22px}.field{margin:14px 0}.field label{display:block;font-size:13px;font-weight:700;margin-bottom:6px}.field input,.field select{width:100%;height:46px;border:1px solid #dfe4de;border-radius:8px;padding:0 13px;font:inherit;font-size:14px;background:#fff;color:var(--ink)}.field input::placeholder{color:#a3aaa4}.field input:focus,.field select:focus{border-color:var(--green);outline:3px solid #1e604b22}.submit{width:100%;height:48px;border:0;border-radius:8px;background:var(--green);color:white;font-size:14px;font-weight:700;cursor:pointer;margin-top:8px}.submit:hover{background:var(--green-dark)}.switch{border-top:1px solid var(--line);padding-top:17px;margin:20px 0 0;text-align:center;font-size:13px;color:var(--muted)}.switch a{font-weight:700;text-decoration:none}.notice{margin-top:17px;padding:11px 13px;background:#f1f4f0;border-radius:8px;color:#58645d;font-size:12px}.notice strong{color:var(--ink)}.terms{display:flex;gap:9px;align-items:flex-start;margin:16px 0;color:var(--muted);font-size:12px}.terms input{accent-color:var(--green);margin-top:3px}footer{padding:19px 0;text-align:center;color:var(--muted);font-size:12px}
+    @media(max-width:520px){.wrap{width:calc(100% - 32px)}.topbar{height:66px}.card{padding:27px 22px}.card h1{font-size:28px}.layout{padding:25px 0}}
+  </style>
+</head>
+<body>
+  <header class="wrap topbar"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">⌂</span>Aangan</a><a class="back" href="index.html">← Back to homes</a></header>
+  <main class="layout"><section class="card" aria-labelledby="title"><span class="eyebrow">A place to begin</span><h1 id="title">Create your account</h1><p class="intro">Join Aangan to find your next home or share one with the community.</p>
+    <form action="login.html" method="get">
+      <div class="field"><label for="name">Full name</label><input id="name" name="name" type="text" autocomplete="name" placeholder="How should we call you?" required></div>
+      <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required></div>
+      <div class="field"><label for="role">I am here to</label><select id="role" name="role" required><option value="" disabled selected>Choose what brings you here</option><option value="rent">Find a home to rent</option><option value="buy">Find a home to buy</option><option value="owner">List a property</option></select></div>
+      <div class="field"><label for="password">Create a password</label><input id="password" name="password" type="password" autocomplete="new-password" minlength="8" placeholder="At least 8 characters" required></div>
+      <label class="terms"><input type="checkbox" name="terms" required><span>I agree to the terms of use and privacy policy.</span></label>
+      <button class="submit" type="submit">Create account&nbsp; →</button>
+    </form>
+    <p class="switch">Already have an account? <a href="login.html">Sign in</a></p>
+    <div class="notice"><strong>Demo project:</strong> This HTML-only form demonstrates the sign-up flow. Account creation and password storage require a server and are not enabled.</div>
+  </section></main>
+  <footer>© 2026 Aangan · Made for finding your place</footer>
+</body>
+</html>
